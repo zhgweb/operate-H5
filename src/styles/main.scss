@@ -1,0 +1,75 @@
+// 项目共用的样式文件
+:root {
+  // 问诊患者：色板
+  --hb-primary: #16C2A3;
+  --hb-plain: #EAF8F6;
+  --hb-orange: #FCA21C;
+  --hb-text1: #121826;
+  --hb-text2: #3C3E42;
+  --hb-text3: #6F6F6F;
+  --hb-tag: #848484;
+  --hb-dark: #979797;
+  --hb-tip: #C3C3C5;
+  --hb-disable: #D9DBDE;
+  --hb-line: #EDEDED;
+  --hb-bg: #F6F7F9;
+  --hb-price: #EB5757;
+  // 覆盖vant主体色
+  --van-primary-color: var(--hb-primary);
+  // 单元格上下间距
+  --van-cell-vertical-padding: 14px;
+  // 复选框大小
+  --van-checkbox-size: 14px;
+  // 默认按钮文字大小
+  --van-button-normal-font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// 全局样式
+body {
+  font-size: 16px;
+  color: var(--hb-text1);
+}
+
+a {
+  color: var(--hb-text2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+// 修改进度条颜色
+#nprogress .bar {
+  background-color: var(--hb-primary) !important;
+}
+
+// 全局覆盖van-tab样式
+.van-tabs {
+  .van-tabs__nav {
+    padding: 0 0 15px 0;
+  }
+
+  .van-tabs__line {
+    width: 20px;
+    background-color: var(--hb-primary);
+  }
+
+  .van-tab {
+    padding: 0 15px;
+  }
+}
